@@ -1,0 +1,6 @@
+/**
+ * Jlabel
+ */
+public class Jlabel {
+
+}
