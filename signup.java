@@ -1,3 +1,4 @@
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,7 +16,7 @@ public class signup extends JFrame implements ActionListener {
     JDateChooser dateChooser;
     Random ran = new Random();
     long first4 = (ran.nextLong() % 9000L) + 1000L;
-    String first = " " + Math.abs(first4);
+    String first = String.valueOf(Math.abs(first4));
 
     signup(){
         super("APPLICATION FORM");
@@ -206,7 +207,7 @@ public class signup extends JFrame implements ActionListener {
            fName + "','" + DOB + "','" + gender + "','" + email + "','" +
            martial + "','" + address + "','" + city + "','" + pincode + "')";
                 con1.statement.executeUpdate(q);
-                new signup2();
+                new signup2(first);
                 setVisible(false);
             }
 

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "signup3",
+            "request": "launch",
+            "mainClass": "signup3",
+            "projectName": "bank mangement system_6798f4bc"
+        },
+        {
+            "type": "java",
+            "name": "signup2",
+            "request": "launch",
+            "mainClass": "signup2",
+            "projectName": "bank mangement system_6798f4bc"
+        },
+        {
+            "type": "java",
             "name": "signup",
             "request": "launch",
             "mainClass": "signup",
