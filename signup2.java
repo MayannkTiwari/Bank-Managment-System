@@ -214,14 +214,16 @@ public class signup2 extends JFrame implements ActionListener{
 
             } else{
                 connection con= new connection();
-                String q = "Insert into Singup2 (religion, category, income, education, occupation, pan, aadhar, senior_citizen, existing_account, form_no) VALUES ('"+rel+"','"+cat+"','"+income+"','"+edu+"','"+occ+"','"+pan+"','"+aadhar+"','"+scitizen+"','','"+formno+"')";
+                String q = "Insert into signup2 (religion, category, income, education, occupation, pan, aadhar, seniorcitizen, existing_account, form_no) VALUES ('"+rel+"','"+cat+"','"+income+"','"+edu+"','"+occ+"','"+pan+"','"+aadhar+"','"+scitizen+"','','"+formno+"')";
                 // Execute the query using your database connection
                 con.statement.executeUpdate(q);
                 new signup3(formno);
                 setVisible(false);
             }
-        } catch (Exception E){
+        } catch (Exception E){ 
             E.printStackTrace();
+            JOptionPane.showMessageDialog(null, E.getMessage());
+
         }
 
         
